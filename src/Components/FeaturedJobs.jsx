@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Job from "./Job";
+import { Link } from "react-router-dom";
 
 const FeaturedJobs = () => {
     const [jobs, setJobs] = useState([]);
@@ -13,9 +14,9 @@ const FeaturedJobs = () => {
             .then(data => setJobs(data))
     }, [])
     return (
-        <div>
-            <div className="text-center space-y-3 my-10">
-                <h2 className="text-4xl">Featured Jobs {jobs.length}</h2>
+        <Link to='/job'>
+            <div className="text-center space-y-3 my-20">
+                <h2 className="text-4xl font-bold">Featured Jobs</h2>
                 <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -28,7 +29,7 @@ const FeaturedJobs = () => {
                 onClick={()=>setDataLength(jobs.length)}
                 className="btn bg-gradient-to-r from-[#7E90FE] to-[#9873FF] text-white">See All Jobs</button>
             </div>
-        </div>
+        </Link>
     );
 };
 

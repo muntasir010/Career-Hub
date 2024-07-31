@@ -1,7 +1,7 @@
 import { AiOutlineDollar, AiTwotoneMail } from "react-icons/ai";
 import { FaPhone, FaRegKeyboard } from "react-icons/fa6";
 import { MdLocationOn } from "react-icons/md";
-import { Link, useLoaderData, useParams } from "react-router-dom";
+import {  useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'
 import { saveJobApplication } from "../Utility/localStorage";
@@ -19,7 +19,7 @@ const JobDetails = () => {
     }
     return (
         <div>
-            <div className="flex items-center justify-center my-20">
+            <div className="flex items-center justify-center mt-32 mb-10">
                 <h2 className="text-4xl font-bold">Job Details</h2>
             </div>
             <div className="grid gap-6 md:grid-cols-4">

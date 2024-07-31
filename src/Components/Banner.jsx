@@ -2,9 +2,9 @@ import BannerImg from '../assets/images/user.png'
 
 const Banner = () => {
     return (
-        <div className="hero min-h-[calc(100vh-68px)] bg-base-200 mb-10 rounded-b-xl">
+        <div className="hero min-h-screen bg-base-200 mb-10 rounded-b-xl ">
             <div className="hero-content flex-col lg:flex-row-reverse">
-                <img className='max-w-sm lg:max-w-xl lg:relative lg:top-[68px]' src={BannerImg} alt="" />
+                <img className='max-w-sm lg:max-w-xl lg:relative lg:top-[100px]' src={BannerImg} alt="" />
                 <div className="max-w-xl">
                     <h1 className="text-3xl md:text-6xl font-bold">One Step Closer To Your <span className="text-[#9873FF]">Dream Job</span></h1>
                     <p className="py-6">
